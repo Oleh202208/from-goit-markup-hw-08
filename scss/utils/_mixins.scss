@@ -1,0 +1,6 @@
+@mixin section ($margin: 60px, $padding: 0) {
+  margin-top: $margin;
+  margin-bottom: $margin;
+  padding-top: $padding;
+  padding-bottom: $padding;
+}

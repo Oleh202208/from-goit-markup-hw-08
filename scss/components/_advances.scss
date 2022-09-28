@@ -1,11 +1,9 @@
 .advances__section{
-  margin: 94px 0;
-}
-.advances__container{
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
+  @include section;
+  
+  @media screen and (min-width: 1200px) {
+    @include section(94px);
+  }
 }
 
 .advances__hidden{
@@ -23,12 +21,13 @@
 
 
 .advances__text .item{
-  width: 270px;
+  // width: 270px;
 }
 
 .advances__list{
-  display: flex;
-  gap: 30px;
+
+  // display: flex;
+  // gap: 30px;
   @extend .list;
 } 
 
@@ -39,14 +38,16 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
   text-transform: uppercase;
 }
+
 .advances__title::before {
   display: block;
   content: "";
   height: 120px;
   background-size: contain;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
 
