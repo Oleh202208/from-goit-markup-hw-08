@@ -644,6 +644,11 @@ img {
   text-align: center;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .advances__title {
+    text-align: left;
+  }
+}
 
 .advances__title::before {
   display: block;
@@ -656,11 +661,11 @@ img {
 @media screen and (min-width: 768px) {
   .advances__title::before {
     width: 354px;
+    text-align: left;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .advances__title::before {
-    background-repeat: no-repeat;
     width: 270px;
   }
 }
