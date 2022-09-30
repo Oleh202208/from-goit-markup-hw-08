@@ -1,12 +1,16 @@
 .customers__section{
-  margin: 94px 0;
+  @include section;
+ 
+  @media screen and (min-width: 1200px) {
+    @include section(94px);
+  }
 }
-.customers__container{
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-}
+// .customers__container{
+//   width: 1200px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding: 0 15px;
+// }
 .customers__title{
   margin: 0;
   margin-bottom: 50px;
@@ -19,8 +23,15 @@ text-align: center;
 .customers__list{
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  // display: flex;
+  // gap: 30px;
   @extend .list;
+
 }
+
   
 .customers__link{
   display: flex;
