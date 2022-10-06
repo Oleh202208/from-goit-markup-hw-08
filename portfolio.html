@@ -31,15 +31,16 @@
 
     <header class="header">
       <div class="container header__container">
+        <a href="./index.html" class="logo__head logo nav__logo"><span class="logo__accent">Web</span>Studio</a>
         <nav class="nav">
           <a href="./index.html" class="logo nav__logo"><span class="logo__accent">Web</span>Studio</a>
-          <ul class="nav__list list">
+          <ul class="nav__list">
             <li class="nav__item"><a href="./index.html" class="nav__link current">Студія</a></li>
             <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
             <li class="nav__item"><a href="./images/css_images/icons.svg" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contacts list">
+        <ul class="contacts">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16" height="12">
@@ -51,35 +52,47 @@
                 <use href="./images/css_images/icons.svg#smartphone"></use>
               </svg>+38 096 111 11 11</a></li>
         </ul>
+
+        <button
+            class="menu-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+            <svg width="40" height="40">
+              <use href="./images/css_images/icons.svg#menu-open"></use>
+            </svg>
+          </button>
       </div>
+
+      
     </header>
 
 
     <main>
       <!-- =======Наші роботи====== -->
-      <section class="section">
+      <section class="section__portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
-          <ul class="list imgs imput">
-            <li class="item-works"><button type="button" class="button-works one">Усі</button></li>
-            <li class="item-works"
-              ><button type="button" class="button-works two">Веб-сайти</button></li
+          <ul class="button__list">
+            <li class="item__works"><button type="button" class="button__works one">Усі</button></li>
+            <li class="item__works"
+              ><button type="button" class="button__works two">Веб-сайти</button></li
             >
-            <li class="item-works"
-              ><button type="button" class="button-works three">Додатки</button></li
+            <li class="item__works"
+              ><button type="button" class="button__works three">Додатки</button></li
             >
-            <li class="item-works"
-              ><button type="button" class="button-works four">Дизайн</button></li
+            <li class="item__works"
+              ><button type="button" class="button__works four">Дизайн</button></li
             >
-            <li class="item-works"
-              ><button type="button" class="button-works five">Маркетинг</button></li
+            <li class="item__works"
+              ><button type="button" class="button__works five">Маркетинг</button></li
             >
           </ul>
-          <ul class="list products">
-            <li class="imgs-flex">
-              <a class="products-link linka" href="">
-                <div class="products-overl">
-                  <img src="./images/portfolio/img1.jpg" alt="Відкритий ноутбук" width="370" />
+          <ul class="products__list">
+            <li class="products__item">
+              <a class="products__link linka" href="">
+                <div class="products__overl">
+                  <img class="products__img" src="./images/portfolio/img1.jpg" alt="Відкритий ноутбук" />
                   <div class="overlay">
                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                     </p>
@@ -91,10 +104,10 @@
               </div>
               </a>
             </li>
-            <li class="imgs-flex">
-              <a class="products-link linka" href="">
-                <div class="products-overl">
-                  <img src="./images/portfolio/img11.jpg" alt="два гравці баскетболу" width="370" />
+            <li class="products__item">
+              <a class="products__link linka" href="">
+                <div class="products__overl">
+                  <img class="products__img" src="./images/portfolio/img11.jpg" alt="два гравці баскетболу" />
                 <div class="overlay">
                   <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
@@ -106,10 +119,10 @@
               </div>
               </a>
             </li>
-            <li class="imgs-flex">
-              <a class="products-link linka" href="">
-                <div class="products-overl">
-                  <img src="./images/portfolio/img12.jpg" alt="Логотип у вигляді риби" width="370" />
+            <li class="products__item">
+              <a class="products__link linka" href="">
+                <div class="products__overl">
+                  <img class="products__img" src="./images/portfolio/img12.jpg" alt="Логотип у вигляді риби" />
                 <div class="overlay">
                   <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
@@ -121,10 +134,10 @@
               </div>
               </a>
             </li>
-            <li class="imgs-flex">
+            <li class="products__item">
               <a class="products-link linka" href="">
-                <div class="products-overl">
-                  <img src="./images/portfolio/img13.jpg" alt="Навушники" width="370" />
+                <div class="products__overl">
+                  <img class="products__img" src="./images/portfolio/img13.jpg" alt="Навушники" />
                 <div class="overlay">
                   <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
@@ -137,10 +150,10 @@
               </a>
               
             </li>
-            <li class="imgs-flex">
+            <li class="products__item">
               <a class="products-link linka" href="">
-                <div class="products-overl">
-                  <img src="./images/portfolio/img14.jpg" alt="Дві коробки" width="370" />
+                <div class="products__overl">
+                  <img class="products__img" src="./images/portfolio/img14.jpg" alt="Дві коробки" />
                 <div class="overlay">
                   <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
@@ -152,10 +165,10 @@
               </div>
               </a>
             </li>
-            <li class="imgs-flex">
+            <li class="products__item">
               <a class="products-link linka" href="">
-                <div class="products-overl">
-                  <img src="./images/portfolio/img15.jpg" alt="Моноблок Apple" width="370" />
+                <div class="products__overl">
+                  <img class="products__img" src="./images/portfolio/img15.jpg" alt="Моноблок Apple" />
                 <div class="overlay">
                   <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
@@ -167,10 +180,10 @@
               </div>
               </a>
             </li>
-            <li class="imgs-flex">
+            <li class="products__item">
               <a class="products-link linka" href="">
-                <div class="products-overl">
-                  <img src="./images/portfolio/img16.jpg" alt="Відкрита книга" width="370" />
+                <div class="products__overl">
+                  <img class="products__img" src="./images/portfolio/img16.jpg" alt="Відкрита книга" />
                 <div class="overlay">
                   <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
@@ -182,10 +195,10 @@
               </div>
               </a>
             </li>
-            <li class="imgs-flex">
+            <li class="products__item">
               <a class="products-link linka" href="">
-                <div class="products-overl">
-                  <img src="./images/portfolio/img17.jpg" alt="Бірка з надписом" width="370" />
+                <div class="products__overl">
+                  <img class="products__img" src="./images/portfolio/img17.jpg" alt="Бірка з надписом" />
                 <div class="overlay">
                   <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
@@ -197,10 +210,10 @@
               </div>
               </a>
             </li>
-            <li class="imgs-flex">
+            <li class="products__item">
               <a class="products-link linka" href="">
-                <div class="products-overl">
-                  <img src="./images/portfolio/img18.jpg" alt="Робота за ноутбуком" width="370" />
+                <div class="products__overl">
+                  <img class="products__img" src="./images/portfolio/img18.jpg" alt="Робота за ноутбуком" />
                 <div class="overlay">
                   <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
