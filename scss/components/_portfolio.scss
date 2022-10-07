@@ -9,7 +9,7 @@ margin-bottom: 40px;
   @extend .list;
   display: flex;
   flex-wrap: wrap;
-  width: 391px;
+  // width: 100%;
   gap: 8px;
  
   margin-bottom: 40px;
@@ -18,13 +18,16 @@ margin-bottom: 40px;
  width: 100%;
   }
 }
-
 .item__works{
-  margin-right: 8px;
+  // flex-basis: calc((100% - 8px * 2) / 3);
 }
-.item__works:last-child{
-  margin-right: 0;
-}
+
+// .item__works{
+//   margin-right: 8px;
+// }
+// .item__works:last-child{
+//   margin-right: 0;
+// }
 
 .button__works{
 display: inline-block;

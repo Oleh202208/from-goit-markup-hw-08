@@ -302,13 +302,13 @@ img {
   height: auto;
 }
 
-.list, .products__list, .button__list, .address__list, .customers__list, .socials__list, .team__list, .affairs__list, .advances__list, .contacts, .nav__list {
+.list, .mobile-socials__list, .mob-contacts__list, .mobile-menu, .products__list, .button__list, .address__list, .customers__list, .socials__list, .team__list, .affairs__list, .advances__list, .contacts, .nav__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.linka, .products__link, .adress__link {
+.linka, .mobile-socials__link, .mail__link, .tel__link, .mobile__link, .products__link, .adress__link {
   text-decoration: none;
 }
 
@@ -1083,7 +1083,6 @@ body {
 }
 
 .team__item {
-  width: 450px;
   margin-bottom: 30px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1472,7 +1471,6 @@ color: var(--accent-color);
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 391px;
   gap: 8px;
   margin-bottom: 40px;
 }
@@ -1483,14 +1481,6 @@ color: var(--accent-color);
             justify-content: center;
     width: 100%;
   }
-}
-
-.item__works {
-  margin-right: 8px;
-}
-
-.item__works:last-child {
-  margin-right: 0;
 }
 
 .button__works {
@@ -1669,4 +1659,134 @@ color: var(--accent-color);
   border-color: transparent;
   border: none;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 40px;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-container.is-open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  padding: 0;
+  color: var(--accent-color);
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: currentColor;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu {
+  margin-bottom: auto;
+}
+.mobile-menu__item .current {
+  color: var(--accent-color);
+}
+
+.mob-contacts__item {
+  margin-bottom: 32px;
+}
+
+.mobile__link {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.mobile__link:last-child {
+  margin-bottom: 0;
+}
+
+.tel__link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.2px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mail__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile-socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 48px;
+  margin-top: 64px;
+}
+
+.molile-socials__item:not(:last-child) {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.molile-socials__item:last-child {
+  padding-left: 10px;
+}
+
+.mobile-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }/*# sourceMappingURL=main.css.map */

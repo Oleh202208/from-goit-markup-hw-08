@@ -219,7 +219,7 @@
 
 
                 
-                <img src="./images/team/img_ms-@1x.jpg" alt="фото працівника, Ігор Дем'яненко"/>
+                <img src="./images/team/img_ms-@1x.jpg" alt="фото працівника, Ігор Дем'яненко" width="450"/>
               </picture>
               <div class="socials">
                 <h3 class="socials__headline">Ігор Дем'яненко</h3>
@@ -639,35 +639,38 @@
     </svg>
   </button>
 
-  <ul class="mobile-menu list">
-    <li>
-      <a href="" class="link">Студія</a>
+  <ul class="mobile-menu">
+    <li class="mobile-menu__item">
+      <a href="./index.html" class="mobile__link current">Студія</a>
     </li>
-    <li>
-      <a href="" class="link">Портфоліо</a>
+    <li class="mobile-menu__item">
+      <a href="./portfolio.html" class="mobile__link">Портфоліо</a>
     </li>
-    <li>
-      <a href="" class="link">Контакти</a>
-    </li>
-  </ul>
-
-  <ul class="list">
-    <li>
-      <a href="" class="link">+38 096 111 11 11</a>
-    </li>
-    <li>
-      <a href="" class="link">info@devstudio.com</a>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile__link">Контакти</a>
     </li>
   </ul>
 
-  <ul class="mobile-socials list">
-    <li><a href="" class="link">Instagram </a></li>
-    <li><a href="" class="link">Twitter</a></li>
-    <li><a href="" class="link">Facebook</a></li>
-    <li><a href="" class="link">LinkedIn</a></li>
+  <ul class="mob-contacts__list">
+    <li class="mob-contacts__item">
+      <a href="" class="tel__link">+380961111111</a>
+    </li>
+    <li>
+      <a href="" class="mail__link linka">info@devstudio.com</a>
+    </li>
+  </ul>
+
+  <ul class="mobile-socials__list">
+    <li class="molile-socials__item"><a href="" class="mobile-socials__link">Instagram </a></li>
+    <li class="molile-socials__item"><a href="" class="mobile-socials__link">Twitter</a></li>
+    <li class="molile-socials__item"><a href="" class="mobile-socials__link">Facebook</a></li>
+    <li class="molile-socials__item"><a href="" class="mobile-socials__link">LinkedIn</a></li>
   </ul>
 </div>
 
+<script src="./js/model.js"></script>
+
+<!-- Mobile menu -->
 <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -675,7 +678,5 @@
       crossorigin="anonymous"
     ></script>
 <script defer src="./js/mobile-menu.js"></script>
-
-<script src="./js/model.js"></script>
   </body>
 </html>
