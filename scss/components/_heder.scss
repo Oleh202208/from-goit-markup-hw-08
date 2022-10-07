@@ -1,7 +1,7 @@
 .header__container{
   @extend .container;
   display: flex;
-  // align-items: center;
+  align-items: center;
 
   background-color: var(--background-color);
   border-bottom: 1px solid #ECECEC ;
@@ -75,6 +75,7 @@ display: none;
   &__list &__link:focus{
     color: var(--accent-color);
   }
+
   &__item .current{
     position: relative;
   color: var(--accent-color);

@@ -341,6 +341,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: var(--background-color);
   border-bottom: 1px solid #ECECEC;
 }
@@ -432,10 +435,14 @@ body {
 @media screen and (min-width: 768px) {
   .contacts {
     display: block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
   }
   .contacts .contacts__item + .contacts__item {
     margin-left: 50px;
@@ -464,6 +471,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.contacts__link--margin {
+  margin-right: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link--margin {
+    margin-right: 0;
+  }
 }
 .contacts__icon {
   fill: currentColor;

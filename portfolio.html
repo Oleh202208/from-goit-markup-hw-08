@@ -35,8 +35,8 @@
         <nav class="nav">
           <a href="./index.html" class="logo nav__logo"><span class="logo__accent">Web</span>Studio</a>
           <ul class="nav__list">
-            <li class="nav__item"><a href="./index.html" class="nav__link current">Студія</a></li>
-            <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
+            <li class="nav__item"><a href="./index.html" class="nav__link ">Студія</a></li>
+            <li class="nav__item"><a href="./portfolio.html" class="nav__link current">Портфоліо</a></li>
             <li class="nav__item"><a href="./images/css_images/icons.svg" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
@@ -612,5 +612,53 @@
         </div>
       </div>
     </footer>
+
+    <!-- ====Mobil Menu -->
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg width="40" height="40">
+      <use href="./images/css_images/icons.svg#menu-close"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu">
+    <li class="mobile-menu__item">
+      <a href="./index.html" class="mobile__link current">Студія</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="./portfolio.html" class="mobile__link">Портфоліо</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="" class="mobile__link">Контакти</a>
+    </li>
+  </ul>
+
+  <ul class="mob-contacts__list">
+    <li class="mob-contacts__item">
+      <a href="" class="tel__link">+380961111111</a>
+    </li>
+    <li>
+      <a href="" class="mail__link linka">info@devstudio.com</a>
+    </li>
+  </ul>
+
+  <ul class="mobile-socials__list">
+    <li class="molile-socials__item"><a href="" class="mobile-socials__link">Instagram </a></li>
+    <li class="molile-socials__item"><a href="" class="mobile-socials__link">Twitter</a></li>
+    <li class="molile-socials__item"><a href="" class="mobile-socials__link">Facebook</a></li>
+    <li class="molile-socials__item"><a href="" class="mobile-socials__link">LinkedIn</a></li>
+  </ul>
+</div>
+
+
+<!-- Mobile menu -->
+<script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
