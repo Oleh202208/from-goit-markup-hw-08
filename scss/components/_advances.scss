@@ -5,6 +5,10 @@
     @include section(94px);
   }
 }
+.advances__container{
+  @extend .container;
+}
+
 
 .advances__hidden{
   position: absolute;
