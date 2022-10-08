@@ -9,7 +9,10 @@
   margin: 0 auto;
   background-size: cover;
   
-    // Mobile screen
+
+  
+
+    // Mobile screen=====
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), 
   url(../images/hero/img_sm-@1x.jpg);
@@ -20,7 +23,7 @@
   }
 
 
-  // Tablet screen
+  // Tablet screen====
   @media screen and (min-width: 481px){
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), 
     url(../images/hero/img_md-@1x.jpg);
