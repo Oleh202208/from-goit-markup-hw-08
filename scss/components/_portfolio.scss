@@ -90,9 +90,14 @@ min-width: 130px;
 }
 
 .products__item{
+  margin-bottom: 30px;
   @media screen and(min-width: 768px){
     width: 354px;
+    margin-bottom: 0;
   }
+}
+.products__item:last-child {
+  margin-bottom: 0;
 }
 
 .products__img{

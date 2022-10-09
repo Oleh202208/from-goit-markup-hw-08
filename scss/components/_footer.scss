@@ -5,8 +5,10 @@
 .footer__container{
   @extend .container;
   text-align: center;
+
   @media screen and (min-width: 1200px){
     display: flex;
+    text-align: left;
   }
 }
 .footer__address{
@@ -39,6 +41,11 @@
 .address__content{
   margin-top: 20px;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px){
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 .address__list{
   @extend .list;
@@ -100,7 +107,12 @@ color: var(--accent-color);
   gap: 10px;
   margin: 0;
   padding: 0;
+
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px){
+    margin-bottom: 0;
+  }
 }
 
 

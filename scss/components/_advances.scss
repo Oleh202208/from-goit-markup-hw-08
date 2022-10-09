@@ -44,6 +44,9 @@
 }
 
 .advances__item{
+
+  margin-bottom: 30px;
+
   @media screen and (min-width: 768px){
     width: 354px;
   }
@@ -52,6 +55,9 @@
     width: 270px;
   }
   
+}
+.advances__item:last-child {
+  margin-bottom: 0;
 }
 
 .advances__title{
@@ -106,4 +112,5 @@
 .advances__text  {
   line-height: 1.71;
   font-size: 14px;
+
 }
