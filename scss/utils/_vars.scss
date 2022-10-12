@@ -1,4 +1,6 @@
 :root{
+  --main-font: Roboto, san-serif;
+  --secondary-font: Raleway;
   --primary-text-color:#757575;
   --title-text-color: #212121;
   --accent-color:#2196F3;
@@ -7,4 +9,7 @@
   --background-color-futer: #2F303A;
   --color-logo: #000000;
   --color-icons: #AFB1B8;
+  --timing-function: cubic-bezier (0.4, 0, 0.2, 1);
 }
+
+    
